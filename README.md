@@ -43,5 +43,10 @@ Application which purpose is to store stock quotes from stock market.
 - `curl --location --request DELETE 'http://localhost:8080/stock-quote/api/v1/stock/PETR3'`
 
 ## Images / Imagens 
+![image](https://user-images.githubusercontent.com/10129476/113339642-24685600-9301-11eb-9a6f-74d888f3c4f4.png)
+![image](https://user-images.githubusercontent.com/10129476/113339683-3c3fda00-9301-11eb-9776-daf075f4036e.png)
+![image](https://user-images.githubusercontent.com/10129476/113339703-4530ab80-9301-11eb-886f-f57523fad504.png)
+
+
 
 ###### Note: Necessary Java 11 / Necessário java 11

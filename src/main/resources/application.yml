@@ -1,0 +1,30 @@
+server:
+  error:
+    include-stacktrace: on_param
+
+spring:
+  application:
+    name: stock-quote
+  datasource:
+    url:  jdbc:mysql://localhost:3306/
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+
+management:
+  endpoint:
+    web:
+      exposure:
+        includ: info, health, metrics, prometheus
+
+info:
+  app: Stock-Quote Project
+  github: https://github.com/fernandoleis

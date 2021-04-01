@@ -11,13 +11,9 @@ Application which purpose is to store stock quotes from stock market.
 - **Executar Java** Dentro da pasta target executar o comando (`java -jar stock-0.0.1-SNAPSHOT.jar`) ou dentro da pasta principal do projeto executar o comando (`mvn spring-boot:run`) *verificar se o maven suporta java 11 (`mvn-version`)*
 
 ## Start application with docker
-- **Run Docker** In terminal or command line execute command (**`docker container run -p 8080:8080 -d fernandoleis/stock-manager:v2`**)*
+- **Run Docker-compose** In terminal or command line execute command in project main folder(**`docker-compose -f docker-compose.yml up -d`**)*
 
-- **Executar Docker** Pelo terminal ou prompt de comando execute o comando (**`docker container run -p 8080:8080 -d fernandoleis/stock-manager:v2`**)*
-
-- **MySql Database** In terminal or command line execute command (**`docker container run -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=bootdb -p 3306:3306 -p 33060:33060 -d mysql:8`**)*
-
-- **MySql Banco de dados** Pelo terminal ou prompt de comando execute o comando (**`docker container run -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=bootdb -p 3306:3306 -p 33060:33060 -d mysql:8`**)*
+- **Executar Docker-compose** Pelo terminal ou prompt de comando execute o comando na pasta principal do projeto(**`docker-compose -f docker-compose.yml up -d`**)*
 
 **INCLUDING JSON OF APIS FOR IMPORT IN POSTMAN (Stock.postman_collection.json) - MAIN FOLDER**
 
@@ -43,5 +39,5 @@ Application which purpose is to store stock quotes from stock market.
 - `curl --location --request DELETE 'http://localhost:8080/stock-quote/api/v1/stock/PETR3'`
 
 ## Images / Imagens 
-
+##### **Note: Database Mysql run together project in command docker-compose / Banco de dados iniciará junto com a aplicação no comando docker-compose**
 ###### Note: Necessary Java 11 / Necessário java 11
